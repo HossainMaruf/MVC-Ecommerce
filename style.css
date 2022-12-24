@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.containerOfAll {
+    position: relative;
+}
+
+/* Header Design */
+
+.header-container {
+    background-color: rgba(15,155,255,.9);
+    position: fixed !important;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.logo-container {
+    height: 100%;
+    display: inline-block;
+}
+.LogoImage {
+    width: 100%;
+    height: 100%;
+}
+.header-container .Link-container {
+    overflow: hidden;
+    margin-left: 70px;
+}
+ .header-container .Link-container a {
+    text-decoration: none;
+    display: inline-flex;
+    padding: 15px;
+}
+.header-container .Link-container a:hover {
+    color: white;
+    transform: scale(1.1,1.1);
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade {
+    from {opacity: .2;}
+    to {opacity: 1;}
+}
+
+/* Footer Design */
+
+.footer {
+    background-color:rgba(152, 143, 161, 0.2);
+    text-align: center;
+    padding-top: 25px;
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 100px;
+}
+.icon {
+    padding-right: 10px;
+    opacity: .2;
+    transition: opacity 1s;           
+}
+.icon:hover {
+    opacity: 1;
+}
+
+
+/* Searching Area */
+
+.searchingDIV {
+    width: 100%;
+    height: 50px;
+    background-color: antiquewhite;
+    position: fixed;
+    top: 60px;
+    margin-bottom: 10px;
+}
+
+#filteringBox {
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 30px;
+    width: 200px;
+}
+
+/* For Products */
+
+#all-item {
+    position: relative;
+    top: 120px;
+    z-index: -1;
+    /* margin-left: 20px; */
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.image-container {
+    border: 1px solid rgba(0,10,14,.1);
+    background-color: aliceblue;;
+    height: 400px;
+    width: 290px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.image {
+    width: 100%;
+    height: 320px;
+}
+
