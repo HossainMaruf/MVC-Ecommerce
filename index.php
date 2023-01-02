@@ -4,8 +4,12 @@
 	require('Database.php');
 	// require('router.php');
 	$config = require('config.php');
-	$db = new Database($config);
-	$posts = $db->query('select * from admin');
-	dd($posts);
+	$config = require('config.php');
 
+	$db = new Database($config['database']);
+	$email = "maruficepustian@gmail.com";
+	$name = "Maruf Hossain";
+	$query = "select * from admin WHERE name = :name";
+	$posts = $db->query($query, [":name" => $name])->fetch();
+	dd($posts);
 ?>
