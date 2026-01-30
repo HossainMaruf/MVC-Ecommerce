@@ -4,6 +4,8 @@
 	$routes = [
 		$prefix.'/' => 'controllers/index.php',
 		$prefix.'/about' => 'controllers/about.php',
+		$prefix.'/notes' => 'controllers/notes.php',
+		$prefix.'/note ' => 'controllers/note.php',
 		$prefix.'/contact' => 'controllers/contact.php',
 	];
 
